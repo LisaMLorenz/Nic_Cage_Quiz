@@ -4,7 +4,7 @@ var answer;
 var quizQuestions = [
 
     {
-        question: "Which is Nicolas Cage's highest grossing movie?",
+        questions: "Which is Nicolas Cage's highest grossing movie?",
         choices: [
             "Con Air",
             "The Croods",
@@ -15,7 +15,7 @@ var quizQuestions = [
     },
 
     {
-        question: "Who was Nicolas Cage NOT married to?",
+        questions: "Who was Nicolas Cage NOT married to?",
         choices: [
             "Lisa Marie Presley",
             "Patricia Arquette",
@@ -26,7 +26,7 @@ var quizQuestions = [
     },
 
     {
-        question: "Professionally know as Nicolas Cage, Nic Cage, or The Best Actor Ever... his family name is really Coppola. But which is his middle name?",
+        questions: "Professionally know as Nicolas Cage, Nic Cage, or The Best Actor Ever... his family name is really Coppola. But which is his middle name?",
         choices: [
             "Tom",
             "Kim",
@@ -37,7 +37,7 @@ var quizQuestions = [
     },
 
     {
-        question: "Nic Cage is parent to how many kids?",
+        questions: "Nic Cage is parent to how many kids?",
     choices: [
             "Noone knows.",
             "He has no kids.",
