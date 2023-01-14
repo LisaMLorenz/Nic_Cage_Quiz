@@ -86,3 +86,12 @@ li:nth-child(odd) {
   top: 10px;
   right: 10px;
 }
+
+.quizQuestions {
+  font-style: normal;
+  font-size: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: gray;
+  border-top: 2px solid #ccc;
+}

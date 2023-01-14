@@ -1,6 +1,3 @@
-var choices;
-var answer; 
-
 var quizQuestions = [
 
     {
@@ -22,7 +19,7 @@ var quizQuestions = [
             "Riko Shibata",
             "Laura Dern"
         ],
-        answer: 4
+        answer: choices[3]
     },
 
     {
