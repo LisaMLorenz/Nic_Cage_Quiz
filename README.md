@@ -19,7 +19,7 @@ https://lisamlorenz.github.io/QuizTime/
 
 ### Write JavaScript code that prompts user click to select question and based on remaining time and results creates a score:
 
-* by click on the start button a timer starts and I am presented with a question
+
 * a new question is presented after inputting and answer to the previous
 * when a question is incorrect time is subtracted from the clock
 * all questions are answered or the timer reaches 0 the game is over and user can save their initials and score
