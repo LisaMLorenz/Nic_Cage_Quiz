@@ -8,6 +8,9 @@ var questions = document.getElementById('questions');
 start.onclick = function time() { //start timer only when start button is clicked
     start.disabled = true;
 
+    document.getElementById("start-screen").style.display = "none"; // when start button is pressed the start screen disappears
+    document.getElementById("questions").style.display = "quizQuestions"; // and the first round of quiz questions appears
+
     var timeLeft = 31; // set time to 31 to actually start from 30
     var timeInterval = setInterval(function () {
         timeLeft--; // counts down
@@ -15,12 +18,13 @@ start.onclick = function time() { //start timer only when start button is clicke
         if (timeLeft === 0) { // IF timeLeft === 0 
             clearInterval(timeInterval);
             timeEl.textContent = "TIME OUT!";
-            document.getElementById("startScreen").classList = "hide"; //change div id="start-screen" from start to hide
-            document.getElementById("questions").classList = "start"; //and display the questions div
-
+            
         }
-    }, 1000);
+    }, 1000); // 1000 milliseconds = 1 second -> interval counts down per second
 }
+
+
+
 
 
 
