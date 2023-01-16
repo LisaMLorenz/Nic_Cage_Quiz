@@ -1,5 +1,5 @@
 # Module 6: Quiz Time!
-Multiple Choice quiz
+Multiple Choice Quiz
 
 # Description
 
@@ -26,12 +26,12 @@ https://lisamlorenz.github.io/QuizTime/
 
 
 ### Screenshot
-[Click here to see the deployed screenshot](assets/Screenshot_Password_Gen.png)
-<img width="1262" alt="Screenshot of Password Generator showing only 3 characters" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/Screenshot_Password_Gen.png">
+[Click here to see the deployed screenshot](assets/CageQuizScreenshot.png)
+<img width="1262" alt="Screenshot of Quiz Startscreen" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/Screenshot_Password_Gen.png">
 
 
 ## Credits
-N/A
+My friend Steffen Henschel helped a lot with understanding the main chunk of the challenge. Especially and mainly getting the questions and choices to pop up and work.
 
 ## License
 MIT License
