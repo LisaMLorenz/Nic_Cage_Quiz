@@ -5,6 +5,9 @@ var choicesElement = document.getElementById('choices');
 var questions = document.getElementById('questions');
 let questionTitleElement = document.querySelector("#question-title");
 var endScreenElement = document.getElementById('end-screen');
+let audioYes = document.getElementById("audio-yes");
+let audioNo = document.getElementById("audio-no");
+
 
 let finalScore = document.getElementById('final-score');
 
@@ -57,7 +60,7 @@ function setNextQuestion() { // if all divs have been shown
 
     showQuestion(shuffledQuestions[currentQuestionIndex]); // mix up order of questions randomly
     currentQuestionIndex = currentQuestionIndex + 1; //increment by one
-    
+
 }
 
 // and I am presented with a question
@@ -88,16 +91,20 @@ function endGame() {
     // hide questions div:
     questions.classList.add("hide");
     // questionsTitleElement.classList.add("hide");
-    
+
 }
 
 function selectAnswer(isCorrectAnswer) {
     // when wrong, zonk!
     if (!isCorrectAnswer) {
         timeLeft = timeLeft - 10; // 10 seconds deducted from time left count
+        audioNo.play();
+    } else {
+        audioYes.play();
     }
     setNextQuestion() //function called
 }
+
 
 
 
