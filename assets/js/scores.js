@@ -2,25 +2,31 @@
 
 const rememberScores = document.querySelector('highscores');
 const forgetScores = document.querySelector('clear');
-const getName = document.querySelector('#initials');
+const getName = document.querySelector('initials');
 const submitBtn = document.querySelector('submit');
 
 let timeLeft;
 
-//and user can save their initials and score
+submitBtn.addEventListener("click", getInitials) // if submit button is pressed
 
-localStorage.setItem("userScore", timeLeft);
-localStorage.setItem("userName", getName);
-
-// if submit button is pressed
-
-function submitName () {
-
+function getInitials() {
+    getName = inputAnswer.getName; //and user can save their initials and score
+    localStorage.setItem("userName", getName); // textfield entry is stored locally
+    localStoreage.getItem("userName");
 }
-// textfield entry is stored locally
 
+function clearScores() {
+    onclick.forgetScores = localStorage.clear();
+}
 
-localStorage.setItem("userScore", timeLeft);
-localStorage.setItem("userName", getName);
+function ClearField() {
+    onclick.submitBtn
+        getName = "";
+}
 
-// end score is arranged in declining order from top down
+// Saving the score
+localStorage.setItem("highscore", timeLeft);
+
+// Retrieving the score
+var highscore = localStorage.getItem("highscores");
+console.log(highscore);
