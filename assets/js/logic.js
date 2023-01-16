@@ -99,23 +99,6 @@ function selectAnswer(isCorrectAnswer) {
     setNextQuestion() //function called
 }
 
-// Pseudo code to store user input and score
-// all questions are answered
-// the game is over
-
-//and user can save their initials and score
-
-// if submit button is pressed
-// textfield entry is stored locally
-
-
-localStorage.setItem("initials", timeLeft);
-
-
-// local info is displayed in end score
-
-// end score is arranged in declining order from top down
-
 
 
 
