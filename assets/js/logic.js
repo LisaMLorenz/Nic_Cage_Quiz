@@ -7,17 +7,25 @@ let questionTitleElement = document.querySelector("#question-title");
 var endScreenElement = document.getElementById('end-screen');
 let audioYes = document.getElementById("audio-yes");
 let audioNo = document.getElementById("audio-no");
+let mostRecentScore = document.getElementById("highscores");
+let submitButton = document.getElementById('submit');
+const userInitials = document.getElementById('initials');
 
 
-let finalScore = document.getElementById('final-score');
+let finalScore = document.getElementById('highscores');
 
 var nextButton;
 var timeInterval;
+var userName = '';
 
+console.log(userName);
 
 let shuffledQuestions, currentQuestionIndex, timeLeft = 30
 
+// finalScore.innerText = "mostRecentScore";
+
 startButton.addEventListener('click', startGame) //by click on the start button a timer starts
+submitButton.addEventListener('click', saveResultToLocalStorage)
 
 function initGame() {
     timeEl.textContent = timeLeft; //show start time before start button is pressed
@@ -86,7 +94,7 @@ function showQuestion(question) {
 function endGame() {
 
     clearInterval(timeInterval); // stops time when all questions are completed
-    
+
     // show end screen div:
     document.getElementById("end-screen").classList.remove("hide"); // show score screen div
     // hide questions div:
@@ -104,6 +112,16 @@ function selectAnswer(isCorrectAnswer) {
         audioYes.play();
     }
     setNextQuestion() //function called
+}
+
+function saveResultToLocalStorage() {
+    
+    const currentUserResult = {
+        score: timeLeft,
+        initials: userInitials.value
+    };
+    
+    console.log(currentUserResult);
 }
 
 
