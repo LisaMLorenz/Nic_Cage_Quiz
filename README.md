@@ -33,7 +33,7 @@ https://lisamlorenz.github.io/QuizTime/
 
 
 ## Credits
-My friend Steffen Henschel helped a lot with understanding the main chunk of the challenge. Especially and mainly getting the questions and choices to pop up and work.
+My friend Steffen Henschel https://github.com/blynx helped a lot with understanding the main chunk of the challenge. Especially and mainly getting the questions and choices to pop up and work - and to look more attentively at the console.
 
 ## License
 MIT License
