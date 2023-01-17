@@ -7,7 +7,6 @@ const submitBtn = document.querySelector('submit');
 
 let timeLeft;
 
-submitBtn.addEventListener("click", getInitials) // if submit button is pressed
 
 function getInitials() {
     getName = inputAnswer.getName; //and user can save their initials and score
@@ -24,9 +23,7 @@ function ClearField() {
         getName = "";
 }
 
-// Saving the score
-localStorage.setItem("highscore", timeLeft);
 
 // Retrieving the score
 var highscore = localStorage.getItem("highscores");
-console.log(highscore);
+console.log(getName);

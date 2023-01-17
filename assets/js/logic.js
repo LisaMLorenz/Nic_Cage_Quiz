@@ -86,7 +86,7 @@ function showQuestion(question) {
 function endGame() {
 
     clearInterval(timeInterval); // stops time when all questions are completed
-    localStorage.setItem("userScore", timeLeft);
+    
     // show end screen div:
     document.getElementById("end-screen").classList.remove("hide"); // show score screen div
     // hide questions div:

@@ -27,9 +27,9 @@ var quizQuestions = [
         choices: [
 
             { text: "Tom", true: false },
-            { text: "Kim", true: false },
+            { text: "Kim", true: true },
             { text: "Ron", true: false },
-            { text: "Ken", true: true }
+            { text: "Ken", true: false }
 
         ],
         correctAnswer: "Kim"
