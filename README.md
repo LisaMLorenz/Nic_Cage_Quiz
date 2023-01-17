@@ -27,7 +27,9 @@ https://lisamlorenz.github.io/QuizTime/
 
 ### Screenshot
 [Click here to see the deployed screenshot](assets/CageQuizScreenshot.png)
-<img width="1262" alt="Screenshot of Quiz Startscreen" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/Screenshot_Password_Gen.png">
+<img width="1092" alt="CageQuizScreenshot" src="https://user-images.githubusercontent.com/116456417/212781886-d854fcbd-b49e-48bc-9f8a-443a573ffa1c.png">
+
+
 
 
 ## Credits
