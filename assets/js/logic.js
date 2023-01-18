@@ -49,7 +49,7 @@ function time() { //start timer only when start button is clicked
         timeLeft--; // counts down
         timeEl.textContent = timeLeft;
         document.getElementById("final-score").innerHTML = timeLeft;
-        localStorage.setItem("initials", timeLeft);
+        localStorage.setItem("score", timeLeft);
         if (timeLeft <= 0) {
             timeLeft = 0;
             timeEl.textContent = "Oh no! TIME OUT!";
@@ -115,12 +115,29 @@ function selectAnswer(isCorrectAnswer) {
 }
 
 function saveResultToLocalStorage() {
-    
+
     const currentUserResult = {
         score: timeLeft,
         initials: userInitials.value
     };
-    
+
+    localStorage.setItem("user-initials", userInitials.value);
+
+    if (userInitials.value.length > 3) {
+        alert("Please enter only max. 3 initials.");
+        document.getElementById("initials").value = "";
+    } else {
+        document.getElementById("initials").value = "";
+        location.href = "./highscores.html";
+
+    }
+
+    const entriesFromLocalStorage = JSON.parse(localStorage.getItem("initials","score")) || {
+        current: 0,
+        previous: []
+      };
+      
+
     console.log(currentUserResult);
 }
 
